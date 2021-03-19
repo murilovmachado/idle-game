@@ -1,0 +1,32 @@
+{
+  "name": "idle-game",
+  "version": "1.0.0",
+  "description": "Idle Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murilovmachado/idle-game.git"
+  },
+  "keywords": [
+    "idle",
+    "game"
+  ],
+  "author": "Murilo Machado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/murilovmachado/idle-game/issues"
+  },
+  "homepage": "https://github.com/murilovmachado/idle-game#readme",
+  "dependencies": {
+    "copy-webpack-plugin": "^8.0.0",
+    "phaser": "^3.53.1",
+    "ts-loader": "^8.0.18",
+    "typescript": "^4.2.3",
+    "webpack": "^5.26.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

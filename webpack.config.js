@@ -2,11 +2,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: {
     app: './src/main.ts',
-    vendors: ['phaser'],
   },
 
   module: {
@@ -24,7 +24,7 @@ module.exports = {
   },
 
   output: {
-    filename: 'app.bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
 
@@ -51,16 +51,16 @@ module.exports = {
       'typeof CANVAS_RENDERER': JSON.stringify(true),
       'typeof WEBGL_RENDERER': JSON.stringify(true),
     }),
+    new BundleAnalyzerPlugin(),
   ],
 
   optimization: {
     splitChunks: {
       cacheGroups: {
-        commons: {
+        vendors: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
           chunks: 'all',
-          filename: '[name].app.bundle.js',
         },
       },
     },

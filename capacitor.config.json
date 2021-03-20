@@ -1,0 +1,13 @@
+{
+  "appId": "com.idlegame.app",
+  "appName": "idle-game",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

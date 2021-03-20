@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/murilovmachado/idle-game#readme",
   "dependencies": {
+    "@capacitor/cli": "^2.4.7",
+    "@capacitor/core": "^2.4.7",
+    "@capacitor/ios": "^2.4.7",
     "copy-webpack-plugin": "^8.0.0",
     "phaser": "^3.53.1",
     "ts-loader": "^8.0.18",
